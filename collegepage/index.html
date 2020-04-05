@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+   <title >Alumni Connect</title>  
+
+<link href="./main.a3f694c0.css" rel="stylesheet"></head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<body>
+
+ <!-- Add your content of header -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle uarr collapsed" data-toggle="collapse" data-target="#navbar-collapse-uarr">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="collegelink" class="navbar-brand" href="../homepage/index.html" title="">
+          <img id="logo" src="./goalogo.jpg" class="navbar-logo-img" alt="" height="40">
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
+        <ul class="nav navbar-nav navbar-right" >
+          <li style="padding-right: 10px">
+            <p>
+              <a href="../login/index.html" class="btn btn-primary navbar-btn" title="">Login</a>
+            </p>
+          </li>
+
+          <li>
+            <p>
+                <a id="register" href="../login/index.html" class="btn btn-primary navbar-btn" title="">Register</a>
+            </p>
+        </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div id="collegephoto" class="white-text-container background-image-container" style="background-image: url('grad.jpeg');background-size:     cover;   background-repeat:   no-repeat;
+    background-position: center center; " >
+    <div class="opacity"></div>
+    <div class="container">
+
+            <div class="col-md-15">
+                <h1 id="collegename"style=font-size:60px ></h1>
+                <h3>Alumni Connect</h3>
+                
+            </div>
+
+    </div>
+</div>
+<script>
+var collinks = ["http://www.ssn.edu.in/", "https://www.iitm.ac.in/", "https://ceg.annauniv.edu/","http://chennai.vit.ac.in/","https://www.srmist.edu.in/","http://www.psgtech.edu/","https://sairam.edu.in/","https://hindustanuniv.ac.in/"];
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const product = urlParams.get('college');
+const index=urlParams.get('index');
+console.log(index);
+document.getElementById('collegename').innerHTML = product;
+document.getElementById('collegephoto').style.backgroundImage = 'url(./img/col'+index+'.jpg)';
+document.getElementById('logo').src = './img/logo'+index+'.jpg';
+document.getElementById('collegelink').href = collinks[index-1];
+document.getElementById('register').href='../register/index.html?college='+product+'&index='+index;
+</script>
+<div class="section-container border-section-container">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    
+                </div>
+
+                <div class="col-md-4">
+                    <div class="fa-container">
+                        <i class="" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">
+                        <h3>Insert Heading</h3>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fa-container">
+                        <i class="" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">
+                        <h3>Insert Heading</h3>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="fa-container">
+                    </div>
+                    <div class="text-center">
+                    <div class="list-group">
+    <a href="#" class=" padding: 10px 15px list-group-item list-group-item-action active">
+      <h3><i class="fa fa-calendar"></i>  Events</h3 >
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class=""></i> <br><br> <span class="badge badge-pill badge-primary pull-right"></span>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class=""></i> <br><br> <span class="badge badge-pill badge-primary pull-right"></span>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class=""></i><br><br> <span class="badge badge-pill badge-primary pull-right"></span>
+    </a>
+</div>
+                    </div>
+                   
+                </div>
+
+            </div>
+    </div>
+</div>
+
+<div class="section-container">
+    <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+
+                    
+
+                </div>
+            </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    navActivePage();
+  });
+</script>
+
+
+
+<script type="text/javascript" src="./main.41beeca9.js"></script></body>
+
+</html>

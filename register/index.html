@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  	<link rel="stylesheet" type="text/css" href="core.css">
+	<link rel="stylesheet" type="text/css" href="theme.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	 <title>Register</title>  
+
+<link href="./style.css" rel="stylesheet"></head>
+
+<body>
+
+
+<header>
+  <nav class="navbar navbar-inverse navbar-fixed-top float: right;">
+		<div class="container-fluid">
+    		<div class="navbar-header">
+   				        <a id="collegelink" class="navbar-brand" href="../homepage/index.html" title="">
+          <img id="logo" src="./goalogo.jpg" class="navbar-logo-img" alt="" height="80">
+        </a>
+   			</div>
+    		<ul class="nav navbar-nav topnav-right">
+    			<li><a id="collegehome" href="../collegepage/index.html">Home</a></li>
+    			<li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      			<li><a href="../login/index.html">Login</a></li>
+    		</ul>
+  		</div>
+	</nav>
+</header>
+<div class="row">
+  <br>
+  <br>
+  <br>  
+
+  </div>
+
+  <div class="login-form">
+  	  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#student">Student</a></li>
+    <li><a data-toggle="tab" href="#alumni">Alumni</a></li>
+  </ul>
+    <form action="/examples/actions/confirmation.php" method="post">
+
+<div class="tab-content">
+     <div id="student" class="tab-pane fade in active">
+      <h2 class="text-center"><u>Student Registration</u></h2> 
+        <p class="text-center">Please fill in all the fields</p> 
+        <br>  
+    <div class="form-group">
+            <b>First Name:</b> <input type="text" class="form-control" name="fname"  required="required">
+        </div>  
+    <div class="form-group">
+            <b>Last Name:</b> <input type="text" class="form-control" name="lname" required="required">
+        </div> 
+        <div class="form-group">
+           <b> Email:</b> <input type="text" class="form-control" name="email"  required="required">
+        </div> 
+        <div class="form-group">
+           <b> Phone:</b> <input type="text" class="form-control" name="phone"  required="required">
+        </div> 
+        <div class="form-group">
+           <b> Birthday:</b> <input type="date" name="bday"  class="form-control" style="width:170px">  
+        </div> 
+        <div class="form-group">
+        <b> Year of Graduation:</b>
+           <select id="yos" name="yos" required="true"><!--year of study--->
+            <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+
+      </select>
+     </div>
+    <div class="form-group">
+        <b> Which department did you study in?</b>
+           <select name="depos" required="true"><!--department of study--->
+        <option value="cse">CSE</option>
+        <option value="it">IT</option>
+        <option value="eee">EEE</option>
+        <option value="ece">ECE</option>
+        <option value="mec">Mechanical</option>
+        <option value="civ">Civil</option>
+        <option value="bio">Biomedical</option>
+      </select>
+     </div>
+     <div class="form-group">
+           <b> Username:</b> <input type="text" class="form-control" name="uname"  required="required">
+        </div>
+        <div class="form-group">
+           <b> Password: (must be atleast 7 characters)</b> <input type="password" minlength="7" class="form-control" name="pwd"  required="required">
+        </div>  
+        <div class="form-group">
+               <input type="submit" class="btn btn-primary btn-block"></input>
+        </div>
+     
+    </div>
+    <div id="alumni" class="tab-pane fade">
+      <h2 class="text-center"><u>Alumni Registration</u></h2> 
+        <p class="text-center">Please fill in all the fields</p> 
+        <br>  
+    <div class="form-group">
+            <b>First Name:</b> <input type="text" class="form-control" name="fname"  required="required">
+        </div>  
+    <div class="form-group">
+            <b>Last Name:</b> <input type="text" class="form-control" name="lname" required="required">
+        </div> 
+        <div class="form-group">
+           <b> Email:</b> <input type="text" class="form-control" name="email"  required="required">
+        </div> 
+        <div class="form-group">
+           <b> Phone:</b> <input type="text" class="form-control" name="phone"  required="required">
+        </div> 
+        <div class="form-group">
+           <b> Birthday:</b> <input type="date" name="bday"  class="form-control" style="width:170px">  
+        </div> 
+        <div class="form-group">
+        <b> Year of pass out:</b>
+           <select id="yop" name="yop" required="true"><!--year of study--->
+      </select>
+     </div>
+    <div class="form-group">
+        <b> Which department do you belong to?</b>
+           <select name="depos" required="true"><!--department of study--->
+        <option value="cse">CSE</option>
+        <option value="it">IT</option>
+        <option value="eee">EEE</option>
+        <option value="ece">ECE</option>
+        <option value="mec">Mechanical</option>
+        <option value="civ">Civil</option>
+        <option value="bio">Biomedical</option>
+      </select>
+     </div>
+      <div class="form-group">
+           <b> Occupation:</b> <input type="text" class="form-control" name="job"  required="required">
+       </div> 
+     <div class="form-group">
+           <b> Username:</b> <input type="text" class="form-control" name="uname"  required="required">
+        </div>
+        <div class="form-group">
+           <b> Password: (must be atleast 7 characters)</b> <input type="password" minlength="7" class="form-control" name="pwd"  required="required">
+        </div> 
+        <dic class="form-group">
+         <b>Add your Linkedin Profile link: </b><input type="url" name="linkedin" class="form-control" >
+      </dic>
+        <div class="form-group">
+                    <b>Upload an image: </b>
+             <input type="file" name="pic" accept="image/*"  > 
+       </div>
+        <div class="form-group">
+
+            <input type="submit" class="btn btn-primary btn-block" onclick="location.href='../alumniprofile/index.html';">
+        </div>
+  </div>
+       
+    </form>
+</div>
+
+
+<div class="row">
+  <br><br><br><br><br><br>
+  </div>
+<!--<footer>
+    <div class="section-container footer-container">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-4">
+                        <h4>Contact Us</h4>
+                        <p>Phone Number: </p>
+                        <p> email id</p>
+
+                    </div>
+
+                    <div class="col-md-4">
+                      <br><br>
+                        <h7>Address:</h7>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et</p>    
+                    </div>
+
+                 
+            </div>
+        </div>
+    </div>
+</footer>--->
+<script>
+var collinks = ["http://www.ssn.edu.in/", "https://www.iitm.ac.in/", "https://ceg.annauniv.edu/","http://chennai.vit.ac.in/","https://www.srmist.edu.in/","http://www.psgtech.edu/","https://sairam.edu.in/","https://hindustanuniv.ac.in/"];
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const product = urlParams.get('college');
+const index=urlParams.get('index');
+console.log(index);
+document.getElementById('logo').src = './img/logo'+index+'.jpg';
+document.getElementById('collegelink').href = collinks[index-1];
+document.getElementById('collegehome').href='../collegepage/index.html?college='+product+'&index='+index;
+var start = 1975;
+var end = new Date().getFullYear();
+var options = "";
+for(var year = start ; year <=end; year++){
+  options += "<option value="+year+">"+ year +"</option>";
+}
+document.getElementById("yop").innerHTML = options;
+</script>
+</body>
+
+</html>
